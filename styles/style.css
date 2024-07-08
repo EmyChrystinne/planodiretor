@@ -1,0 +1,37 @@
+
+/* Fontes */
+@font-face {
+  font-family: "Bronkoh-Heavy";
+  src: url("../fonts/Bronkoh-Heavy.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bronkoh";
+  src: url("../fonts/Bronkoh-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global */
+
+body {
+  display: flex;
+  width: 100%;
+  background-color: #fefefe;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bronkoh", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* img{
+  width: 100%;
+  height: auto;
+} */

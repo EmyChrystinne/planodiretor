@@ -1,0 +1,119 @@
+footer {
+  width: 100%;
+  background-color: #173f73;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+
+}
+
+footer .logos {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+footer .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 20px;
+}
+
+footer .navbar a {
+  text-decoration: underline;
+  color: #ffffff;
+  font-size: 1em;
+}
+
+footer .navbar a:hover {
+  transition: 0.3s;
+  text-decoration: underline;
+  color: #f4bb49;
+}
+
+.logos img {
+  width: auto;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.copyright{
+    background-color: #606060;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 0.8em;
+    font-family: "Bronkoh";
+    gap: 10px;
+    padding: 5px 0;
+
+}
+
+.copyright a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.copyright p{
+    margin: 0;
+}
+
+
+@media screen and (max-width: 768px){
+    footer{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        /* height: 100px; */
+        gap: 20px;
+        padding: 20px 0;
+    }
+    
+    footer .logos{
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    footer .logos img{
+        width: auto;
+        height: 40px;
+    }
+    
+    footer .navbar{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    footer .navbar a{
+        font-size: 0.8em;
+    }
+    }

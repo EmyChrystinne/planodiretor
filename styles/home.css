@@ -1,0 +1,172 @@
+.sobre {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: #173f73;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.texto-sobre {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  width: 90%;
+  max-width: 840px;
+  padding: 0 10px 0 0;
+}
+
+h1 {
+  color: #f4bb49;
+  font-size: 2.5em;
+  font-family: "Bronkoh-Heavy";
+  margin: 0;
+  padding: 0;
+}
+
+.sobre p {
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  padding: 40px;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+.oficinas {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 40px 0;
+}
+
+.oficinas .content {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 840px;
+
+}
+
+.oficinas .content .texto-ofc {
+  width: 70%;
+}
+
+.oficinas .content .botao {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.oficinas .content .botao a {
+  display: flex;
+  width: 100%;
+  background: #f4bb49;
+  color: #173f73;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-family: "Bronkoh-Heavy";
+  font-size: 1.3em;
+}
+
+.oficinas .content .botao a:hover {
+  transition: 0.3s;
+  background: #173f73;
+  color: #f4bb49;
+}
+
+.participacao-online {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: #93c01f;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  /* padding: 40px 0; */
+}
+
+.participacao-online a {
+  display: flex;
+  width: 100%;
+  background: #93c01f;
+  color: #173f73;
+  text-align: center;
+  padding: 40px 0;
+  text-decoration: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bronkoh-Heavy";
+  font-size: 1.6em;
+  margin: 0;
+  line-height: 0;
+}
+
+participacao-online p{
+margin: 0;
+padding: 0;
+}
+
+#desc{
+    font-size: 0.5em;
+}
+
+.participacao-online a:hover {
+  transition: 0.3s;
+  /* background: #173f73; */
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .oficinas .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .oficinas .content .texto-ofc {
+    width: 100%;
+  }
+
+  .oficinas .content .botao {
+    width: 90%;
+  }
+
+
+}
