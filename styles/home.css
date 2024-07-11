@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   height: auto;
-  background: #173f73;
+  /* background: #173f73; */
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
@@ -18,8 +18,30 @@
   justify-content: center;
   gap: 20px;
   width: 90%;
-  max-width: 840px;
+  max-width: 1240px;
   padding: 0 10px 0 0;
+}
+
+.paragrafos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.paragrafos p {
+  margin: 10px 0;
+}
+
+.paragrafos ul {
+  margin: 10px 0;
+}
+
+.paragrafos ul li {
+  font-size: 1.2em;
+  list-style: circle;
+  margin: 5px 0;
 }
 
 h1 {
@@ -30,8 +52,12 @@ h1 {
   padding: 0;
 }
 
+p {
+  font-size: 1.2em;
+}
+
 .sobre p {
-  color: #ffffff;
+  color: #000000;
 }
 
 header {
@@ -54,6 +80,7 @@ header img {
   justify-content: center;
   align-content: center;
   padding: 40px 0;
+  background-color: #173f73;
 }
 
 .oficinas .content {
@@ -65,12 +92,38 @@ header img {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  max-width: 840px;
-
+  max-width: 1240px;
 }
 
-.oficinas .content .texto-ofc {
+.oficinas .content .ofpp .img-ofc {
   width: 70%;
+}
+
+.oficinas .content .ofpp {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.oficinas .content .ofpp .img-ofc img {
+  width: 100%;
+  height: auto;
+}
+
+.oficinas .content .ofpp .texto-ofc {
+  width: 70%;
+}
+.oficinas .content .texto-ofc p {
+  /* line-height: 30px; */
+  color: #f4bb49;
+  font-family: "Bronkoh-Heavy";
+  text-align: center;
+  font-size: 1.6em;
 }
 
 .oficinas .content .botao {
@@ -104,8 +157,8 @@ header img {
 
 .oficinas .content .botao a:hover {
   transition: 0.3s;
-  background: #173f73;
-  color: #f4bb49;
+  background: #93c01f;
+  color: #173f73;
 }
 
 .participacao-online {
@@ -139,13 +192,13 @@ header img {
   line-height: 0;
 }
 
-participacao-online p{
-margin: 0;
-padding: 0;
+participacao-online p {
+  margin: 0;
+  padding: 0;
 }
 
-#desc{
-    font-size: 0.5em;
+#desc {
+  font-size: 0.5em;
 }
 
 .participacao-online a:hover {
@@ -160,13 +213,16 @@ padding: 0;
     gap: 20px;
   }
 
-  .oficinas .content .texto-ofc {
+  .oficinas .content .botao .texto-ofc {
+    width: 100%;
+    font-size: 0.8em;
+  }
+
+  .oficinas .content .ofpp {
     width: 100%;
   }
 
   .oficinas .content .botao {
     width: 90%;
   }
-
-
 }
