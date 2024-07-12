@@ -11,6 +11,9 @@ nav{
     align-content: center;
     justify-content: center;
     gap: 40px;
+    position: sticky;
+    top: 0;
+
 }
 
 nav .logo-plano-nav{
