@@ -168,6 +168,10 @@ header img {
   color: #ffffff;
 }
 
+#realizada{
+  text-decoration: line-through;
+}
+
 .participacao-online {
   display: flex;
   width: 100%;
@@ -214,6 +218,27 @@ participacao-online p {
   color: #ffffff;
 }
 
+.timeline{
+  display: flex;
+  width: 100%;
+  max-width: 1240px;
+  height: auto;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.timeline img{
+  width: 100%;
+  height: auto;
+}
+
+#vertical{
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .oficinas .content {
     flex-direction: column;
@@ -231,5 +256,13 @@ participacao-online p {
 
   .oficinas .content .botao {
     width: 90%;
+  }
+
+  #vertical {
+    display: flex;
+  }
+
+  #horizontal {
+    display: none;
   }
 }
