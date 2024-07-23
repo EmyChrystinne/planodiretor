@@ -161,18 +161,18 @@ header img {
   color: #173f73;
 }
 
-.oficinas .content .botao .texto-ofc ul li{
+.oficinas .content .botao .texto-ofc ul li {
   font-size: 1em;
   list-style: circle;
   margin: 10px 0;
   color: #ffffff;
 }
 
-#realizada{
+#realizada {
   text-decoration: line-through;
 }
 
-.participacao-online {
+/* .participacao-online {
   display: flex;
   width: 100%;
   height: auto;
@@ -181,7 +181,7 @@ header img {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  /* padding: 40px 0; */
+  padding: 40px 0;
 }
 
 .participacao-online a {
@@ -214,11 +214,11 @@ participacao-online p {
 
 .participacao-online a:hover {
   transition: 0.3s;
-  /* background: #173f73; */
+  background: #173f73;
   color: #ffffff;
-}
+} */
 
-.timeline{
+.timeline {
   display: flex;
   width: 100%;
   max-width: 1240px;
@@ -230,12 +230,176 @@ participacao-online p {
   padding: 40px 0;
 }
 
-.timeline img{
+.timeline img {
   width: 100%;
   height: auto;
 }
 
-#vertical{
+.participacao-online {
+  display: flex;
+  width: 90%;
+  max-width: 1240px;
+  height: auto;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.participacao-online .title-bar {
+  background-color: #93c01f;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.participacao-online .title-bar h1 {
+  color: #ffffff;
+  font-family: "Bronkoh-Heavy";
+  font-size: 2em;
+}
+
+.participacao-online .title-bar img {
+  width: 60px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.tematicas {
+  display: flex;
+  width: 100%;
+  max-width: 1240px;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px 0;
+  align-content: flex-start;
+  gap: 10px;
+}
+
+.tema {
+  display: flex;
+  width: 33%;
+  min-height: 600px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  color: #ffffff;
+}
+
+.tema .img-tema {
+  padding-top: 20px;
+  display: flex;
+  width: 100px;
+  height: auto;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.tema .img-tema img {
+  width: 100%;
+  height: auto;
+}
+
+.textos-tema {
+  display: flex;
+  width: 90%;
+  height: auto;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.textos-tema h2 {
+  font-family: "Bronkoh-Heavy";
+  font-size: 1.8em;
+  text-align: center;
+  margin: 0;
+}
+
+.textos-tema p {
+  text-align: justify;
+  font-size: 1.2em;
+  font-family: "Bronkoh-ExtraLight";
+}
+
+.textos-tema a {
+  color: #ffffff;
+  font-family: "Bronkoh-Heavy";
+}
+
+.textos-tema a:hover {
+  transition: 0.3s;
+  color: #f4bb49;
+}
+
+#mudancasclimaticas {
+  background: #93c01f;
+}
+
+#direitoacidade {
+  background: #173f73;
+}
+
+#reestruturacao {
+  background: #ec7329;
+}
+
+.botao-participacao {
+  display: flex;
+  width: 80%;
+  text-align: center;
+  text-decoration: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.botao-participacao a {
+  padding: 20px 40px;
+  border: #e7e7e7 solid 2px;
+  /* width: 300px; */
+  color: #e7e7e7;
+  font-family: "Bronkoh-Heavy";
+  font-size: 1.6em;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 20px;
+  cursor: default;
+  background: #9393935a ;
+}
+
+#ativo a {
+  border: none;
+  background: #f4bb49;
+  color: #173f73;
+}
+
+#ativo a:hover {
+  background: #93c01f;
+  color: #173f73;
+  cursor: pointer;
+}
+
+#vertical {
   display: none;
 }
 
@@ -256,6 +420,18 @@ participacao-online p {
 
   .oficinas .content .botao {
     width: 90%;
+  }
+
+  .tematicas {
+    flex-direction: column;
+  }
+
+  .tema {
+    width: 100%;
+  }
+
+  .tema .botao-participacao {
+    min-height: auto;
   }
 
   #vertical {

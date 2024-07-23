@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/styles/nav.css" />
     <link rel="stylesheet" href="/styles/footer.css" />
     <link rel="stylesheet" href="/styles/home.css" />
+    <script src="./js/navbar-dropdown.js"></script>
     <meta
       name="description"
       content="Conheça o Plano Diretor de Maceió/AL. 
@@ -32,8 +33,14 @@
       <div class="navbar">
         <a href="#sobre">SOBRE</a>
         <a href="#oficinas">OFICINAS</a>
-        <a href="#participacao-online">PARTICIPAÇÃO ONLINE</a>
         <a href="./pages/links.html">DOCUMENTOS</a>
+        <div class="temasemergentes">
+          <p onclick="toggleDropdown()">TEMAS EMERGENTES</p>
+          <div class="dropdown" id="dropdown">
+            <a href="../pages/tematicas/mudancasclimaticas.html">MUDANÇAS CLIMATICAS</a>
+            <a href="../pages/tematicas/direitoacidade.html">DIREITO À CIDADE</a>
+            <a href="../pages/tematicas/reestruturacaodapaisagemurbana.html">REESTRUTURAÇÃO DA PAISAGEM URBANA</a>
+          </div>
       </div>
     </nav>
     <header>
@@ -87,19 +94,17 @@
                 divulgado em breve.
               </li>
             </ul>
-            <!-- <p>
+            <p>
               Inscrições abertas para a<br />Oficina de Participação Popular
-            </p> -->
+            </p>
           </div>
-          <!-- <a href="https://forms.gle/WoPvES81WD8xTBfe8">Inscreva-se!</a> -->
+          <a href="https://forms.gle/ocTgkTJSjoJ1njMw7">Inscreva-se!</a>
         </div>
       </div>
     </div>
     <div class="sobre" id="sobre">
       <div class="texto-sobre">
-        <h1>
-         Conheça o Plano Diretor
-        </h1>
+        <h1>Conheça o Plano Diretor</h1>
         <div class="paragrafos">
           <p>
             O Plano Diretor é o principal instrumento que orienta o
@@ -154,14 +159,106 @@
       </div>
     </div>
     <div class="timeline">
-      <img src="./img/timeline-horizontal.svg" id="horizontal">
-      <img src="./img/timeline-vertical.svg" id="vertical">
+      <img src="./img/timeline-horizontal.svg" id="horizontal" />
+      <img src="./img/timeline-vertical.svg" id="vertical" />
     </div>
     <div class="participacao-online" id="participacao-online">
-      <a href="" target="_blank" rel="noopener noreferrer">
+      <div class="title-bar">
+        <img src="img/seta.svg" alt="" />
+        <h1>Participe Online!</h1>
+      </div>
+      <div class="tematicas">
+        <div class="tema" id="mudancasclimaticas">
+          <div class="img-tema">
+            <img src="img/mudancasclimatias.svg" alt="Planeta Terra" />
+          </div>
+          <div class="textos-tema">
+            <h2>MUDANÇAS CLIMÁTICAS</h2>
+            <p>
+              Com as transformações globais causadas pelo ser humano, a perda de
+              biodiversidade e a diminuição da qualidade de vida, as comunidades
+              urbanas, especialmente as mais vulneráveis, enfrentam riscos
+              crescentes de inundações, ondas de calor e elevação do nível do
+              mar. Em resposta a esses desafios, Maceió promoverá uma discussão
+              pública sobre o tema, com o objetivo de elaborar estratégias
+              eficazes para enfrentar os desafios climáticos da cidade.
+              <a href="./pages/tematicas/mudancasclimaticas.html"
+                >(Leia Mais)</a
+              >
+            </p>
+          </div>
+          <!-- <div class="botao-participacao">
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Encerrado
+            </a>
+          </div> -->
+        </div>
+        <div class="tema" id="direitoacidade" >
+          <div class="img-tema">
+            <img src="img/direitoacidade.svg" alt="pessoa caminhando" />
+          </div>
+          <div class="textos-tema">
+            <h2>DIREITO A CIDADE</h2>
+            <p>
+              Compreender as políticas urbanas inclusivas como instrumentos que
+              garantem acesso igualitário a serviços e infraestruturas é
+              fundamental, considerando as diversas camadas da população e seus
+              privilégios no espaço urbano. Em Maceió, o contraste social
+              ressalta a importância do debate sobre o direito igualitário à
+              cidade. Através da oficina, podemos contribuir para a criação de
+              políticas mais justas e inclusivas, combatendo desigualdades e
+              promovendo o direito à cidade para todos.
+              <a href="./pages/tematicas/direitoacidade.html">(Leia Mais)</a>
+            </p>
+          </div>
+          <!-- <div class="botao-participacao" id="ativo">
+            <a
+              href="https://forms.gle/WoPvES81WD8xTBfe8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Participe
+            </a>
+          </div> -->
+        </div>
+        <div class="tema" id="reestruturacao">
+          <div class="img-tema">
+            <img src="img/reestruturacaodapaisagemurbana.svg" alt="cidade" />
+          </div>
+          <div class="textos-tema">
+            <h2>REESTRUTURAÇÃO DA PAISAGEM URBANA</h2>
+            <p>
+              Para entender as transformações urbanas de Maceió, é preciso
+              considerar as contradições e complexidades das cidades modernas.
+              Os desafios decorrente da mineração da Braskem causou o
+              esvaziamento de cinco bairros, resultando em grandes mudanças
+              urbanas, como remoções forçadas e perda de patrimônio cultural. A
+              revisão do Plano Diretor é uma chance de preservar a identidade e
+              memória das comunidades afetadas.
+              <a href="./pages/tematicas/reestruturacaodapaisagemurbana.html"
+                >(Leia Mais)</a
+              >
+            </p>
+          </div>
+          <!-- <div class="botao-participacao">
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Em breve
+            </a>
+          </div> -->
+        </div>
+      </div>
+      <!-- <a href="" target="_blank" rel="noopener noreferrer">
         <p>Participação Online</p>
         <p id="desc">Em Breve - Contribua online durante a oficina</p>
-      </a>
+      </a> -->
     </div>
     <footer>
       <div class="logos">

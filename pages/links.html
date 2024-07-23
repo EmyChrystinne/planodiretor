@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/home.css" />
     <link rel="stylesheet" href="../styles/links.css" />
+    <script src="../js/navbar-dropdown.js"></script>
+
     <meta
       name="description"
       content="Conheça o Plano Diretor de Maceió/AL. 
@@ -33,8 +35,15 @@
       <div class="navbar">
         <a href="../index.html#sobre">SOBRE</a>
         <a href="../index.html#oficinas">OFICINAS</a>
-        <a href="../index.html#participacao-online">PARTICIPAÇÃO ONLINE</a>
         <a href="./links.html">DOCUMENTOS</a>
+        <div class="temasemergentes">
+          <p onclick="toggleDropdown()">TEMAS EMERGENTES</p>
+          <div class="dropdown" id="dropdown">
+            <a href="../pages/tematicas/mudancasclimaticas.html">MUDANÇAS CLIMATICAS</a>
+            <a href="../pages/tematicas/direitoacidade.html">DIREITO À CIDADE</a>
+            <a href="../pages/tematicas/reestruturacaodapaisagemurbana.html">REESTRUTURAÇÃO DA PAISAGEM URBANA</a>
+          </div>
+    </nav>
       </div>
     </nav>
     <header>
