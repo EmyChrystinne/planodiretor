@@ -138,6 +138,21 @@
     text-align: justify;
 }
 
+.tematica-conteudo .cronograma{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.tematica-conteudo .cronograma img{
+    width: 100%;
+    height: auto;
+}
+
 @media screen and (max-width: 768px){
     .header {
         flex-direction: column;

@@ -24,6 +24,14 @@ h2 {
   /* text-align: center; */
 }
 
+.Etapa {
+  padding-top: 20px;
+  font-size: 1.6em;
+  font-family: "Bronkoh-Heavy";
+  color: #f4bb49;
+  border-bottom: #f4bb49 2px solid;
+  margin: 10px;
+}
 .campo {
   display: flex;
   flex-direction: column;
@@ -55,6 +63,24 @@ h2 {
   transition: 0.2s;
   color: #f4bb49;
 }
+
+.cronograma{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1240px;
+}
+
+.cronograma img{
+  width: 100%;
+  height: auto;
+}
+
+
 
 @media screen and (max-width: 768px){
   .content {

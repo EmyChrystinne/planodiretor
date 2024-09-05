@@ -1,59 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plano Diretor | Maceió/AL</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="stylesheet" href="/styles/nav.css" />
-    <link rel="stylesheet" href="/styles/footer.css" />
-    <link rel="stylesheet" href="/styles/home.css" />
-    <script src="./js/navbar-dropdown.js"></script>
-    <meta
-      name="description"
-      content="Conheça o Plano Diretor de Maceió/AL. 
-    Saiba mais sobre as oficinas e participe online!"
-    />
-    <meta
-      name="keywords"
-      content="Plano Diretor, Maceió, AL, Participação online, Oficinas, Urbanismo, Desenvolvimento urbano, Planejamento urbano, Gestão urbana, Zonas urbanas, Sustentabilidade urbana"
-    />
-  </head>
-  <body>
-    <nav>
-      <div class="logo-plano-nav">
-        <a href="http://planodiretor.maceio.al.gov.br">
-          <img
-            src="/img/logovertical-planodiretor.svg"
-            alt="Logo do Plano de Maceió"
-          />
-        </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plano Diretor | Maceió/AL</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/nav.css" />
+  <link rel="stylesheet" href="/styles/footer.css" />
+  <link rel="stylesheet" href="/styles/home.css" />
+  <script src="./js/navbar-dropdown.js"></script>
+  <meta name="description" content="Conheça o Plano Diretor de Maceió/AL. 
+    Saiba mais sobre as oficinas e participe online!" />
+  <meta name="keywords"
+    content="Plano Diretor, Maceió, AL, Participação online, Oficinas, Urbanismo, Desenvolvimento urbano, Planejamento urbano, Gestão urbana, Zonas urbanas, Sustentabilidade urbana" />
+</head>
+
+<body>
+  <nav>
+    <div class="logo-plano-nav">
+      <a href="http://planodiretor.maceio.al.gov.br">
+        <img src="/img/logovertical-planodiretor.svg" alt="Logo do Plano de Maceió" />
+      </a>
+    </div>
+    <div class="navbar">
+      <a href="#sobre">SOBRE</a>
+      <a href="./pages/programacao.html">PROGRAMAÇÃO</a>
+      <a href="./pages/links.html">DOCUMENTOS</a>
+      <!-- <a href="./pages/oficina_em_numeros.html">OFICINAS EM NÚMEROS</a> -->
+      <div class="temasemergentes">
+        <p onclick="toggleDropdown()">TEMAS EMERGENTES</p>
+        <div class="dropdown" id="dropdown">
+          <a href="../pages/tematicas/mudancasclimaticas.html">MUDANÇAS CLIMATICAS</a>
+          <a href="../pages/tematicas/direitoacidade.html">DIREITO À CIDADE</a>
+          <a href="../pages/tematicas/reestruturacaodapaisagemurbana.html">REESTRUTURAÇÃO DA PAISAGEM URBANA</a>
+        </div>
       </div>
-      <div class="navbar">
-        <a href="#sobre">SOBRE</a>
-        <a href="#oficinas">OFICINAS</a>
-        <a href="./pages/links.html">DOCUMENTOS</a>
-        <div class="temasemergentes">
-          <p onclick="toggleDropdown()">TEMAS EMERGENTES</p>
-          <div class="dropdown" id="dropdown">
-            <a href="../pages/tematicas/mudancasclimaticas.html">MUDANÇAS CLIMATICAS</a>
-            <a href="../pages/tematicas/direitoacidade.html">DIREITO À CIDADE</a>
-            <a href="../pages/tematicas/reestruturacaodapaisagemurbana.html">REESTRUTURAÇÃO DA PAISAGEM URBANA</a>
-          </div>
-      </div>
-    </nav>
-    <header>
-      <img src="./img/logo-planodiretor.svg" alt="logo plano diretor" />
-    </header>
-    <div class="oficinas" id="oficinas">
+    </div>
+  </nav>
+  <header>
+    <img src="./img/logo-planodiretor.svg" alt="logo plano diretor" />
+  </header>
+  <!-- <div class="oficinas" id="oficinas">
       <div class="content">
         <div class="ofpp">
           <div class="img-ofc">
             <img src="./img/vamos juntos.svg" alt="Oficinas" />
           </div>
-        </div>
-        <!-- <div class="texto-ofc">
+        </div> -->
+
+  <!-- <div class="texto-ofc">
           <h1>Oficinas</h1>
           <p>
             Entendendo que é essencial debater esses temas, convidamos todos os
@@ -76,7 +73,7 @@
             <strong>Venha discutir a cidade!</strong>
           </p>
         </div> -->
-        <div class="botao">
+  <!-- <div class="botao">
           <div class="texto-ofc">
             <ul>
               <li id="realizada">
@@ -88,202 +85,202 @@
                 27/07 - das 08h às 18h | <strong>Direito à Cidade</strong>.
                 Local: IFAL. Rua Mizael Domingues, 530 - Centro.
               </li>
-              <li>
+              <li id="realizada">
                 03/08 - das 08h às 18h |
-                <strong>Reestruturação da Paisagem Urbana</strong>. Local: CESMAC, Campus I. Rua Cônego Machado, 984 - Farol.
+                <strong>Reestruturação da Paisagem Urbana</strong>. Local: CESMAC, Campus I. Rua Cônego Machado, 984 - Farol. <a href="./pages/tematicas/reestruturacaodapaisagemurbana.html#cronograma" id="paracronograma"> Veja a programação da oficina </a>
               </li>
             </ul>
             <p>
               Inscrições abertas para a<br />Oficina de Participação Popular
             </p>
           </div>
-          <a href="https://forms.gle/ocTgkTJSjoJ1njMw7">Inscreva-se!</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeX9gbzaCzMNzBLpmR-o2rtUOsPz7u1X7kAkBUCQzGkh3yrOg/viewform">Inscreva-se!</a>
+        </div> -->
+  </div>
+  </div>
+  <div class="banner">
+    <a href="https://forms.gle/QXKeo6WMiG763RT69" target="_blank" rel="noopener noreferrer">
+      <img src="./img/acoes-diretrizes-banner-horizontal.svg" alt="ações e diretrizes" id="horizontal" />
+      <img src="./img/acoes-diretrizes-banner-vertical.svg" alt="ações e diretrizes" id="vertical" />
+    </a>
+  </div>
+  <div class="sobre" id="sobre">
+    <div class="texto-sobre">
+      <h1>Conheça o Plano Diretor</h1>
+      <div class="paragrafos">
+        <p>
+          O Plano Diretor é o principal instrumento que orienta o
+          desenvolvimento da cidade, fixando as regras e definindo as
+          estratégias de planejamento para alcançar o efetivo desenvolvimento
+          sustentável do território. Ele é uma exigência legal estabelecida
+          pelo Estatuto da Cidade (Lei Federal n.º 10.257/2001) e tem como
+          objetivo principal garantir o pleno desenvolvimento das funções
+          sociais da cidade e da propriedade urbana, bem como assegurar a
+          qualidade de vida dos seus habitantes.
+        </p>
+        <p>
+          O Plano Diretor aborda uma série de questões que podem ser agrupadas
+          por temas, entre eles: habitação, expansão urbana, dinâmica
+          imobiliária, segurança, qualidade urbana e ambiental, patrimônio
+          cultural, uso e ocupação do solo, desenvolvimento econômico, grandes
+          projetos de impacto, meio ambiente, saneamento ambiental, mobilidade
+          e transporte, desenvolvimento rural sustentável, equipamentos
+          públicos, turismo, áreas de risco à vida, financiamento do
+          desenvolvimento urbano, e gestão democrática e participação popular
+        </p>
+        <p>
+          O Plano Diretor de Maceió (Lei Municipal n.º 5.486/2005) teve seu
+          processo de revisão iniciado em 2015, com um diagnóstico
+          físico-territorial que identificou a necessidade de “trazer Maceió
+          de volta". Com isso, foram traçadas três macroestratégias de
+          desenvolvimento territorial: adensamento e reabilitação, paisagem e
+          meio ambiente, mobilidade e centralidade. Essas estratégias são
+          baseadas em princípios norteadores como o resgate da memória, o
+          fortalecimento das identidades, a reconexão do território a partir
+          de sua geomorfologia, o melhor aproveitamento dos vazios urbanos, a
+          conservação dos recursos naturais, a redução das desigualdades
+          socioespaciais, a redistribuição dos serviços urbanos e o
+          fortalecimento da economia local.
+        </p>
+        <p>
+          Diante desse lapso temporal, fica evidente a necessidade de retomar
+          as discussões relativas ao desenvolvimento territorial sustentável,
+          considerando uma realidade com eventos climáticos extremos cada vez
+          mais frequentes, os impactos da perspectiva da interseccionalidade
+          nas dinâmicas do território e, sobretudo, as consequências do
+          desastre do afundamento do solo devido ao processo de mineração
+          urbana.
+        </p>
+        <p>
+          Portanto, convidamos todos os habitantes a pensar, discutir e
+          construir coletivamente um futuro possível para Maceió, a partir das
+          seguintes questões emergentes: mudanças climáticas, direito à cidade
+          e reestruturação da paisagem urbana.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="timeline">
+    <img src="./img/timeline-horizontal.svg" id="horizontal" />
+    <img src="./img/timeline-vertical.svg" id="vertical" />
+  </div>
+  <div class="participacao-online" id="participacao-online">
+    <div class="title-bar">
+      <div class="icon-participe"> <img src="img/seta.svg" alt="" />
+        <h1>Participe Online</h1>
+      </div>
+
+      <a href="https://forms.gle/rpRMh7XiAbGctGYa9">Contribua aqui!</a>
+    </div>
+    <div class="tematicas">
+      <div class="tema" id="mudancasclimaticas">
+        <div class="img-tema">
+          <img src="img/mudancasclimatias.svg" alt="Planeta Terra" />
         </div>
-      </div>
-    </div>
-    <div class="sobre" id="sobre">
-      <div class="texto-sobre">
-        <h1>Conheça o Plano Diretor</h1>
-        <div class="paragrafos">
+        <div class="textos-tema">
+          <h2>MUDANÇAS CLIMÁTICAS</h2>
           <p>
-            O Plano Diretor é o principal instrumento que orienta o
-            desenvolvimento da cidade, fixando as regras e definindo as
-            estratégias de planejamento para alcançar o efetivo desenvolvimento
-            sustentável do território. Ele é uma exigência legal estabelecida
-            pelo Estatuto da Cidade (Lei Federal n.º 10.257/2001) e tem como
-            objetivo principal garantir o pleno desenvolvimento das funções
-            sociais da cidade e da propriedade urbana, bem como assegurar a
-            qualidade de vida dos seus habitantes.
-          </p>
-          <p>
-            O Plano Diretor aborda uma série de questões que podem ser agrupadas
-            por temas, entre eles: habitação, expansão urbana, dinâmica
-            imobiliária, segurança, qualidade urbana e ambiental, patrimônio
-            cultural, uso e ocupação do solo, desenvolvimento econômico, grandes
-            projetos de impacto, meio ambiente, saneamento ambiental, mobilidade
-            e transporte, desenvolvimento rural sustentável, equipamentos
-            públicos, turismo, áreas de risco à vida, financiamento do
-            desenvolvimento urbano, e gestão democrática e participação popular
-          </p>
-          <p>
-            O Plano Diretor de Maceió (Lei Municipal n.º 5.486/2005) teve seu
-            processo de revisão iniciado em 2015, com um diagnóstico
-            físico-territorial que identificou a necessidade de “trazer Maceió
-            de volta". Com isso, foram traçadas três macroestratégias de
-            desenvolvimento territorial: adensamento e reabilitação, paisagem e
-            meio ambiente, mobilidade e centralidade. Essas estratégias são
-            baseadas em princípios norteadores como o resgate da memória, o
-            fortalecimento das identidades, a reconexão do território a partir
-            de sua geomorfologia, o melhor aproveitamento dos vazios urbanos, a
-            conservação dos recursos naturais, a redução das desigualdades
-            socioespaciais, a redistribuição dos serviços urbanos e o
-            fortalecimento da economia local.
-          </p>
-          <p>
-            Diante desse lapso temporal, fica evidente a necessidade de retomar
-            as discussões relativas ao desenvolvimento territorial sustentável,
-            considerando uma realidade com eventos climáticos extremos cada vez
-            mais frequentes, os impactos da perspectiva da interseccionalidade
-            nas dinâmicas do território e, sobretudo, as consequências do
-            desastre do afundamento do solo devido ao processo de mineração
-            urbana.
-          </p>
-          <p>
-            Portanto, convidamos todos os habitantes a pensar, discutir e
-            construir coletivamente um futuro possível para Maceió, a partir das
-            seguintes questões emergentes: mudanças climáticas, direito à cidade
-            e reestruturação da paisagem urbana.
+            Com as transformações globais causadas pelo ser humano, a perda de
+            biodiversidade e a diminuição da qualidade de vida, as comunidades
+            urbanas, especialmente as mais vulneráveis, enfrentam riscos
+            crescentes de inundações, ondas de calor e elevação do nível do
+            mar. Em resposta a esses desafios, Maceió promoverá uma discussão
+            pública sobre o tema, com o objetivo de elaborar estratégias
+            eficazes para enfrentar os desafios climáticos da cidade.
+            <a href="./pages/tematicas/mudancasclimaticas.html">(Leia Mais)</a>
           </p>
         </div>
-      </div>
-    </div>
-    <div class="timeline">
-      <img src="./img/timeline-horizontal.svg" id="horizontal" />
-      <img src="./img/timeline-vertical.svg" id="vertical" />
-    </div>
-    <div class="participacao-online" id="participacao-online">
-      <div class="title-bar">
-        <img src="img/seta.svg" alt="" />
-        <h1>Participe Online!</h1>
-      </div>
-      <div class="tematicas">
-        <div class="tema" id="mudancasclimaticas">
-          <div class="img-tema">
-            <img src="img/mudancasclimatias.svg" alt="Planeta Terra" />
-          </div>
-          <div class="textos-tema">
-            <h2>MUDANÇAS CLIMÁTICAS</h2>
-            <p>
-              Com as transformações globais causadas pelo ser humano, a perda de
-              biodiversidade e a diminuição da qualidade de vida, as comunidades
-              urbanas, especialmente as mais vulneráveis, enfrentam riscos
-              crescentes de inundações, ondas de calor e elevação do nível do
-              mar. Em resposta a esses desafios, Maceió promoverá uma discussão
-              pública sobre o tema, com o objetivo de elaborar estratégias
-              eficazes para enfrentar os desafios climáticos da cidade.
-              <a href="./pages/tematicas/mudancasclimaticas.html"
-                >(Leia Mais)</a
-              >
-            </p>
-          </div>
-          <div class="botao-participacao">
+        <!-- ADICIONAR LINKS E ALTERAR O EM BREVE PARA PARTICIPE AQUI! -->
+        <!-- <div class="botao-participacao">
             <a
               href=""
             >
               Em Breve
             </a>
-          </div>
+          </div> -->
+      </div>
+      <div class="tema" id="direitoacidade">
+        <div class="img-tema">
+          <img src="img/direitoacidade.svg" alt="pessoa caminhando" />
         </div>
-        <div class="tema" id="direitoacidade" >
-          <div class="img-tema">
-            <img src="img/direitoacidade.svg" alt="pessoa caminhando" />
-          </div>
-          <div class="textos-tema">
-            <h2>DIREITO A CIDADE</h2>
-            <p>
-              Compreender as políticas urbanas inclusivas como instrumentos que
-              garantem acesso igualitário a serviços e infraestruturas é
-              fundamental, considerando as diversas camadas da população e seus
-              privilégios no espaço urbano. Em Maceió, o contraste social
-              ressalta a importância do debate sobre o direito igualitário à
-              cidade. Através da oficina, podemos contribuir para a criação de
-              políticas mais justas e inclusivas, combatendo desigualdades e
-              promovendo o direito à cidade para todos.
-              <a href="./pages/tematicas/direitoacidade.html">(Leia Mais)</a>
-            </p>
-          </div>
-          <div class="botao-participacao">
+        <div class="textos-tema">
+          <h2>DIREITO A CIDADE</h2>
+          <p>
+            Compreender as políticas urbanas inclusivas como instrumentos que
+            garantem acesso igualitário a serviços e infraestruturas é
+            fundamental, considerando as diversas camadas da população e seus
+            privilégios no espaço urbano. Em Maceió, o contraste social
+            ressalta a importância do debate sobre o direito igualitário à
+            cidade. Através da oficina, podemos contribuir para a criação de
+            políticas mais justas e inclusivas, combatendo desigualdades e
+            promovendo o direito à cidade para todos.
+            <a href="./pages/tematicas/direitoacidade.html">(Leia Mais)</a>
+          </p>
+        </div>
+        <!-- ADICIONAR LINKS E ALTERAR O EM BREVE PARA PARTICIPE AQUI! -->
+        <!-- <div class="botao-participacao">
             <a
               href=""
             >
               Em Breve
             </a>
-          </div>
+          </div> -->
+      </div>
+      <div class="tema" id="reestruturacao">
+        <div class="img-tema">
+          <img src="img/reestruturacaodapaisagemurbana.svg" alt="cidade" />
         </div>
-        <div class="tema" id="reestruturacao">
-          <div class="img-tema">
-            <img src="img/reestruturacaodapaisagemurbana.svg" alt="cidade" />
-          </div>
-          <div class="textos-tema">
-            <h2>REESTRUTURAÇÃO DA PAISAGEM URBANA</h2>
-            <p>
-              Para entender as transformações urbanas de Maceió, é preciso
-              considerar as contradições e complexidades das cidades modernas.
-              Os desafios decorrente da mineração da Braskem causou o
-              esvaziamento de cinco bairros, resultando em grandes mudanças
-              urbanas, como remoções forçadas e perda de patrimônio cultural. A
-              revisão do Plano Diretor é uma chance de preservar a identidade e
-              memória das comunidades afetadas.
-              <a href="./pages/tematicas/reestruturacaodapaisagemurbana.html"
-                >(Leia Mais)</a
-              >
-            </p>
-          </div>
-          <div class="botao-participacao">
+        <div class="textos-tema">
+          <h2>REESTRUTURAÇÃO DA PAISAGEM URBANA</h2>
+          <p>
+            Para entender as transformações urbanas de Maceió, é preciso
+            considerar as contradições e complexidades das cidades modernas.
+            Os desafios decorrente da mineração da Braskem causou o
+            esvaziamento de cinco bairros, resultando em grandes mudanças
+            urbanas, como remoções forçadas e perda de patrimônio cultural. A
+            revisão do Plano Diretor é uma chance de preservar a identidade e
+            memória das comunidades afetadas.
+            <a href="./pages/tematicas/reestruturacaodapaisagemurbana.html">(Leia Mais)</a>
+          </p>
+        </div>
+
+        <!-- ADICIONAR LINKS E ALTERAR O EM BREVE PARA PARTICIPE AQUI! -->
+        <!-- <div class="botao-participacao">
             <a
               href=""
             >
               Em breve
             </a>
-          </div>
-        </div>
+          </div> -->
       </div>
-      <!-- <a href="" target="_blank" rel="noopener noreferrer">
-        <p>Participação Online</p>
-        <p id="desc">Em Breve - Contribua online durante a oficina</p>
-      </a> -->
     </div>
-    <footer>
-      <div class="logos">
-        <div class="logo-plano-footer">
-          <a href="http://planodiretor.maceio.al.gov.br">
-            <img
-              src="/img/logo-planodiretor-branco.svg"
-              alt="Logo do Plano de Maceió"
-            />
-          </a>
-        </div>
-        <div class="logo-pmm">
-          <a href="http://maceio.al.gov.br">
-            <img
-              src="/img/Brasão prefeitura (horizontal)_Branco.svg"
-              alt="Logo do Plano de Maceió"
-            />
-          </a>
-        </div>
+  </div>
+  <footer>
+    <div class="logos">
+      <div class="logo-plano-footer">
+        <a href="http://planodiretor.maceio.al.gov.br">
+          <img src="/img/logo-planodiretor-branco.svg" alt="Logo do Plano de Maceió" />
+        </a>
       </div>
-      <div class="navbar">
-        <a href="#sobre">Sobre</a>
-        <a href="#oficinas">Oficinas</a>
-        <a href="#participacao-online">Participação Online</a>
-        <a href="./pages/links.html">Documentos</a>
+      <div class="logo-pmm">
+        <a href="http://maceio.al.gov.br">
+          <img src="/img/Brasão prefeitura (horizontal)_Branco.svg" alt="Logo do Plano de Maceió" />
+        </a>
       </div>
-    </footer>
-    <div class="copyright">
-      <p>
-        © 2024 -
-        <a href="https://maceio.al.gov.br/secretarias-e-orgaos/iplan">IPLAN</a>
-      </p>
     </div>
-  </body>
+    <div class="navbar">
+      <a href="#sobre">Sobre</a>
+      <a href="./pages/programacao.html">Programação</a>
+      <a href="#participacao-online">Participação Online</a>
+      <a href="./pages/links.html">Documentos</a>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>
+      © 2024 -
+      <a href="https://maceio.al.gov.br/secretarias-e-orgaos/iplan">IPLAN</a>
+    </p>
+  </div>
+</body>
+
 </html>

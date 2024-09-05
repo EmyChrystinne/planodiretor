@@ -103,7 +103,7 @@ nav .navbar a:hover{
         align-content: center;
         justify-content: center;
         align-items: center;
-        height: 100px;
+        height: 100%;
         gap: 10px;
         padding-top: 10px;
         padding-bottom: 10px;
