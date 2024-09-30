@@ -1,4 +1,5 @@
-nav{
+/* Estilos básicos para o nav */
+nav {
     display: flex;
     align-items: center;
     background-color: #ffffff;
@@ -13,30 +14,29 @@ nav{
     gap: 40px;
     position: sticky;
     top: 0;
-
 }
 
-nav .logo-plano-nav{
+/* Logo */
+nav .logo-plano-nav {
     display: flex;
     align-items: center;
     width: 10%;
     justify-content: center;
-    align-content: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
 }
 
-nav .logo-plano-nav a{
+nav .logo-plano-nav a {
     margin-left: 20px;
     text-decoration: none;
 }
 
-.logo-plano-nav img{
+.logo-plano-nav img {
     width: auto;
     height: 60px;
     margin-right: 10px;
 }
-nav .navbar{
+
+/* Menu de navegação */
+nav .navbar {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -48,78 +48,139 @@ nav .navbar{
     gap: 20px;
 }
 
-nav .navbar a{
+/* Links do menu */
+nav .navbar a {
     text-decoration: none;
     color: #173F73;
     font-size: 1.0em;
 }
 
-nav .navbar a:hover{
+nav .navbar a:hover {
     transition: 0.3s;
     text-decoration: underline;
     color: #F4BB49;
 }
 
+/* Dropdown */
 .temasemergentes {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropdown {
+}
+
+.temasemergentes:hover .dropdown {
+    display: block; /* Exibe o dropdown quando o mouse está sobre o .temasemergentes */
+}
+
+.dropdown {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  .dropdown a {
+}
+
+.dropdown a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
+}
 
-  .temasemergentes p{
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.temasemergentes p {
     color: #173F73;
     font-size: 1.0em;
     font-family: "Bronkoh";
     margin: 0;
-    padding:0;
+    padding: 0;
     text-decoration: none;
     display: block;
     cursor: pointer;
-  }
-  
-  .dropdown a:hover {
-    background-color: #f1f1f1;
-  }
+    text-align: center;
 
-@media screen and (max-width: 768px){
-    nav{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
+}
+
+/* Menu Hamburguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 10; /* Certifique-se de que o menu toggle esteja acima dos outros elementos */
+}
+
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #173F73;
+    margin: 3px 0;
+    transition: background-color 0.3s;
+}
+
+.menu-toggle:hover div {
+    background-color: #F4BB49;
+}
+
+/* Estilo para o menu no modo mobile */
+.menu-active .navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.menus{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Estilo para o menu no modo mobile */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        height: auto;
         gap: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 10px 0;
+        justify-content: space-evenly;
+    }
 
-    }
-    nav .logo-plano-nav{
-        width: 100%;
+    nav .logo-plano-nav {
+        width: 20%;
         justify-content: center;
     }
-    nav .navbar{
+
+    nav .navbar {
         width: 100%;
-        justify-content: center;
+        flex-direction: column;
+        display: none; /* Oculta o menu de navegação */
+        background-color: #fff; /* Adiciona um fundo branco para o mobile */
+        position: absolute;
+        top: 80px; /* Ajuste conforme a altura da navbar */
+        left: 0;
+        z-index: 9;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     }
+
+    nav .navbar a {
+        padding: 10px;
+        text-align: center;
+    }
+
     .dropdown {
         position: static;
-      }
+        width: 100%; /* Garante que o dropdown preencha a largura */
+    }
 
-    
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menus {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+    }
 }

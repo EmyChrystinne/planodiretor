@@ -1,21 +1,33 @@
-function toggleDropdown() {
-  var dropdown = document.getElementById("dropdown");
-  if (dropdown.style.display === "block" || dropdown.style.display === "flex") {
-    dropdown.style.display = "none";
-  } else {
-    dropdown.style.display = "block";
+function toggleMenu() {
+  var navbar = document.querySelector('.navbar');
+  navbar.style.display = (navbar.style.display === 'flex' || navbar.style.display === '') ? 'none' : 'flex';
+}
+
+function toggleDropdown(dropdownId) {
+  var dropdown = document.getElementById(dropdownId);
+  var isDisplayed = dropdown.style.display === 'block';
+
+  var dropdowns = document.querySelectorAll('.dropdown');
+  dropdowns.forEach(function(dropdown) {
+      dropdown.style.display = 'none';
+      var trigger = dropdown.previousElementSibling;
+      trigger.setAttribute('aria-expanded', 'false');
+  });
+
+  if (!isDisplayed) {
+      dropdown.style.display = 'block';
+      var trigger = dropdown.previousElementSibling;
+      trigger.setAttribute('aria-expanded', 'true');
   }
 }
 
-// Fecha o dropdown se o usuário clicar fora dele
-window.onclick = function(event) {
-  if (!event.target.matches('.temasemergentes p')) {
-    var dropdowns = document.getElementsByClassName("dropdown");
-    for (var i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.style.display === "block" || openDropdown.style.display === "flex") {
-        openDropdown.style.display = "none";
-      }
-    }
+window.addEventListener('click', function(event) {
+  if (!event.target.closest('.temasemergentes')) {
+      var dropdowns = document.querySelectorAll('.dropdown');
+      dropdowns.forEach(function(dropdown) {
+          dropdown.style.display = 'none';
+          var trigger = dropdown.previousElementSibling;
+          trigger.setAttribute('aria-expanded', 'false');
+      });
   }
-}
+});

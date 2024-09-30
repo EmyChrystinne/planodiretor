@@ -20,25 +20,38 @@
 <body>
   <nav>
     <div class="logo-plano-nav">
-      <a href="http://planodiretor.maceio.al.gov.br">
-        <img src="/img/logovertical-planodiretor.svg" alt="Logo do Plano de Maceió" />
-      </a>
+        <a href="http://planodiretor.maceio.al.gov.br">
+            <img src="/img/logovertical-planodiretor.svg" alt="Logo do Plano de Maceió" />
+        </a>
     </div>
-    <div class="navbar">
-      <a href="#sobre">SOBRE</a>
-      <a href="./pages/programacao.html">PROGRAMAÇÃO</a>
-      <a href="./pages/links.html">DOCUMENTOS</a>
-      <!-- <a href="./pages/oficina_em_numeros.html">OFICINAS EM NÚMEROS</a> -->
-      <div class="temasemergentes">
-        <p onclick="toggleDropdown()">TEMAS EMERGENTES</p>
-        <div class="dropdown" id="dropdown">
-          <a href="../pages/tematicas/mudancasclimaticas.html">MUDANÇAS CLIMATICAS</a>
-          <a href="../pages/tematicas/direitoacidade.html">DIREITO À CIDADE</a>
-          <a href="../pages/tematicas/reestruturacaodapaisagemurbana.html">REESTRUTURAÇÃO DA PAISAGEM URBANA</a>
-        </div>
+    <div class="menus">
+      <div class="menu-toggle" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+      <div class="navbar">
+          <a href="#sobre">SOBRE</a>
+          <div class="temasemergentes" onclick="toggleDropdown('temas-emergentes-dropdown')">
+              <p aria-expanded="false">PROGRAMAÇÃO</p>
+              <div id="temas-emergentes-dropdown" class="dropdown">
+                  <a href="./pages/programacao.html">PROGRAMAÇÃO DAS OFICINAS</a>
+                  <a href="../pages/programacao-transporte.html">PROGRAMAÇÃO DOS TRANSPORTES</a>
+              </div>
+          </div>
+          <a href="./pages/links.html">DOCUMENTOS</a>
+          <div class="temasemergentes" onclick="toggleDropdown('temas-emergentes-dropdown2')">
+              <p aria-expanded="false">TEMAS EMERGENTES</p>
+              <div id="temas-emergentes-dropdown2" class="dropdown">
+                  <a href="../pages/tematicas/mudancasclimaticas.html">MUDANÇAS CLIMÁTICAS</a>
+                  <a href="../pages/tematicas/direitoacidade.html">DIREITO À CIDADE</a>
+                  <a href="../pages/tematicas/reestruturacaodapaisagemurbana.html">REESTRUTURAÇÃO DA PAISAGEM URBANA</a>
+              </div>
+          </div>
       </div>
     </div>
-  </nav>
+</nav>
+
   <header>
     <img src="./img/logo-planodiretor.svg" alt="logo plano diretor" />
   </header>

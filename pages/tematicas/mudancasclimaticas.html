@@ -30,38 +30,48 @@
   <body>
     <nav>
       <div class="logo-plano-nav">
-        <a href="http://planodiretor.maceio.al.gov.br">
-          <img
-            src="../../img/logovertical-planodiretor.svg"
-            alt="Logo do Plano de Maceió"
-          />
-        </a>
+          <a href="http://planodiretor.maceio.al.gov.br">
+              <img src="../../img/logovertical-planodiretor.svg" alt="Logo do Plano de Maceió" />
+          </a>
+        </div>
+        <div class="menus">
+      <div class="menu-toggle" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
       </div>
       <div class="navbar">
-        <a href="../../index.html#sobre">SOBRE</a>
-        <a href="../../pages/programacao.html">PROGRAMAÇÃO</a>
-        <a href="../links.html">DOCUMENTOS</a>
-        <!-- <a href="../oficina_em_numeros.html">OFICINAS EM NÚMEROS</a> -->
-
-        <div class="temasemergentes">
-          <p onclick="toggleDropdown()">TEMAS EMERGENTES</p>
-          <div class="dropdown" id="dropdown">
-            <a href="mudancasclimaticas.html">MUDANÇAS CLIMATICAS</a>
-            <a href="direitoacidade.html">DIREITO À CIDADE</a>
-            <a href="reestruturacaodapaisagemurbana.html">REESTRUTURAÇÃO DA PAISAGEM URBANA</a>
+          <a href="../../index.html#sobre">SOBRE</a>
+          <div class="temasemergentes" onclick="toggleDropdown('temas-emergentes-dropdown')">
+              <p aria-expanded="false">PROGRAMAÇÃO</p>
+              <div id="temas-emergentes-dropdown" class="dropdown">
+                  <a href="../programacao.html">PROGRAMAÇÃO DAS OFICINAS</a>
+                  <a href="../programacao-transporte.html">PROGRAMAÇÃO DOS TRANSPORTES</a>
+              </div>
           </div>
-    </nav>
+          <a href="../links.html">DOCUMENTOS</a>
+          <div class="temasemergentes" onclick="toggleDropdown('temas-emergentes-dropdown2')">
+              <p aria-expanded="false">TEMAS EMERGENTES</p>
+              <div id="temas-emergentes-dropdown2" class="dropdown">
+                  <a href="mudancasclimaticas.html">MUDANÇAS CLIMÁTICAS</a>
+                  <a href="direitoacidade.html">DIREITO À CIDADE</a>
+                  <a href="reestruturacaodapaisagemurbana.html">REESTRUTURAÇÃO DA PAISAGEM URBANA</a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </nav>
     <div class="header" id="mudancas">
       <div class="content">
         <div class="icon-theme">
           <img src="../../img/mudancasclimatias.svg" alt="" />
           <h1>Mudanças Climáticas</h1>
         </div>
-        <div class="inscreva-se">
+        <!-- <div class="inscreva-se">
           <a href="" target="_blank" rel="noopener noreferrer"
             >Em breve</a
           >
-        </div>
+        </div> -->
       </div>
     </div>
 

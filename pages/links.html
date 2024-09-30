@@ -1,231 +1,208 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plano Diretor | Maceió/AL</title>
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/nav.css" />
-    <link rel="stylesheet" href="../styles/footer.css" />
-    <link rel="stylesheet" href="../styles/home.css" />
-    <link rel="stylesheet" href="../styles/links.css" />
-    <script src="../js/navbar-dropdown.js"></script>
 
-    <meta
-      name="description"
-      content="Conheça o Plano Diretor de Maceió/AL. 
-    Saiba mais sobre as oficinas e participe online!"
-    />
-    <meta
-      name="keywords"
-      content="Plano Diretor, Maceió, AL, Participação online, Oficinas, Urbanismo, Desenvolvimento urbano, Planejamento urbano, Gestão urbana, Zonas urbanas, Sustentabilidade urbana"
-    />
-  </head>
-  <body>
-    <nav>
-      <div class="logo-plano-nav">
-        <a href="http://planodiretor.maceio.al.gov.br">
-          <img
-            src="../img/logovertical-planodiretor.svg"
-            alt="Logo do Plano de Maceió"
-          />
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plano Diretor | Maceió/AL</title>
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/nav.css" />
+  <link rel="stylesheet" href="../styles/footer.css" />
+  <link rel="stylesheet" href="../styles/home.css" />
+  <link rel="stylesheet" href="../styles/links.css" />
+  <script src="../js/navbar-dropdown.js"></script>
+
+  <meta name="description" content="Conheça o Plano Diretor de Maceió/AL. 
+    Saiba mais sobre as oficinas e participe online!" />
+  <meta name="keywords"
+    content="Plano Diretor, Maceió, AL, Participação online, Oficinas, Urbanismo, Desenvolvimento urbano, Planejamento urbano, Gestão urbana, Zonas urbanas, Sustentabilidade urbana" />
+</head>
+
+<body>
+  <nav>
+    <div class="logo-plano-nav">
+      <a href="http://planodiretor.maceio.al.gov.br">
+        <img src="../img/logovertical-planodiretor.svg" alt="Logo do Plano de Maceió" />
+      </a>
+    </div>
+    <div class="menus">
+
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
       <div class="navbar">
         <a href="../index.html#sobre">SOBRE</a>
-        <a href="../pages/programacao.html">PROGRAMAÇÃO</a>
-
+        <div class="temasemergentes" onclick="toggleDropdown('temas-emergentes-dropdown')">
+          <p aria-expanded="false">PROGRAMAÇÃO</p>
+          <div id="temas-emergentes-dropdown" class="dropdown">
+            <a href="./programacao.html">PROGRAMAÇÃO DAS OFICINAS</a>
+            <a href="programacao-transporte.html">PROGRAMAÇÃO DOS TRANSPORTES</a>
+          </div>
+        </div>
         <a href="./links.html">DOCUMENTOS</a>
-        <!-- <a href="./oficina_em_numeros.html">OFICINAS EM NÚMEROS</a> -->
-
-        <div class="temasemergentes">
-          <p onclick="toggleDropdown()">TEMAS EMERGENTES</p>
-          <div class="dropdown" id="dropdown">
-            <a href="../pages/tematicas/mudancasclimaticas.html"
-              >MUDANÇAS CLIMATICAS</a
-            >
-            <a href="../pages/tematicas/direitoacidade.html"
-              >DIREITO À CIDADE</a
-            >
-            <a href="../pages/tematicas/reestruturacaodapaisagemurbana.html"
-              >REESTRUTURAÇÃO DA PAISAGEM URBANA</a
-            >
+        <div class="temasemergentes" onclick="toggleDropdown('temas-emergentes-dropdown2')">
+          <p aria-expanded="false">TEMAS EMERGENTES</p>
+          <div id="temas-emergentes-dropdown2" class="dropdown">
+            <a href="./tematicas/mudancasclimaticas.html">MUDANÇAS CLIMÁTICAS</a>
+            <a href="./tematicas/direitoacidade.html">DIREITO À CIDADE</a>
+            <a href="./tematicas/reestruturacaodapaisagemurbana.html">REESTRUTURAÇÃO DA PAISAGEM URBANA</a>
           </div>
         </div>
       </div>
-    </nav>
-    <header>
-      <img src="../img/logo-planodiretor.svg" alt="logo plano diretor" />
-    </header>
-    <div class="content">
-            <!-- Produtos Revisão do Plano Diretor -->
-            <div class="campo">
-              <h2>Produtos Revisão do Plano Diretor</h2>
-              <div class="lista">
-                <ul>
-                  <li>
-                    <a href="https://drive.google.com/drive/folders/1ZwoTCbV8-ZLegNOHtREi579DDHd0wvO7?usp=drive_link" target="_blank" rel="noopener noreferrer"
-                      >Plano de Trabalho</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://drive.google.com/drive/folders/1kBo6VXKFD7rg2ZAFyDanqwVmu1PkPMbl?usp=drive_link" target="_blank" rel="noopener noreferrer"
-                      >Caderno de Mapa de Apoio para as Oficinas
-                      </a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://www.google.com/maps/d/u/1/viewer?mid=1bbXT5fPAlauaYBjmEZ6836C-9NfJG8Q&ll=-9.534885034971555%2C-35.68641899999999&z=10" target="_blank" rel="noopener noreferrer"
-                      >Maceió em Mapas
-                      </a
-                    >
-                    
-                    <h2 class="Etapa">Etapa 1. Estruturação</h2>
-                  
-                  </li>
-                  <li>
-                    <a href="https://drive.google.com/drive/folders/14JYhuVfu-qooOTJ-FF7FkpZligVJd_W2?usp=drive_link" target="_blank" rel="noopener noreferrer"
-                      >Chamamento Público para composição do conselho
-                      </a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://drive.google.com/drive/folders/1aYxbvxVQ45SqMIUFgRZ2jKNbEEOJVHY-?usp=drive_link" target="_blank" rel="noopener noreferrer"
-                      >Portaria do Conselho pra Chamamento Público para Composição do Conselho
-                      </a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://drive.google.com/drive/folders/1mLLjd6rMiPw0CrAK3BRFwl5QeGKdCI2c?usp=drive_link" target="_blank" rel="noopener noreferrer"
-                      >Regimento Interno
-                      </a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://drive.google.com/drive/folders/1k_f8wpsUjEiwExJtRJpNhIXQtAK_5dlL?usp=drive_link" target="_blank" rel="noopener noreferrer"
-                      >Portaria de Nomeação dos Componentes do Comitê Técnico do Plano Diretor
-                      </a
-                    >
-                  </li>
-                  <h2 class="Etapa">Etapa 2. Leitura</h2>
-                  <li>
-                    <a href="https://drive.google.com/drive/folders/1bjp6xJ_TYEDKbtvafeHnVFPrG_yDz5Fk?usp=sharing" target="_blank" rel="noopener noreferrer">Caderno de Leitura Técnica</a>
-                  </li>
-                  <li>
-                    <a href="https://drive.google.com/drive/folders/1Yi3UZzkYzr5MPzmGd43lNbDXLbU-ES0L?usp=sharing" target="_blank" rel="noopener noreferrer">Caderno de Leitura Comunitária</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-      <!-- Dados e Informações Complementares -->
-       <div class="campo">
-        <h2>
-          Dados e Informações Complementares
-        </h2>
-        <div class="lista">
-          <ul>
-          <li><a href="https://drive.google.com/file/d/16Lerl-vioA6uu_10sVs0__1gohMOtUGT/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Maceió 4.0 | Plano Estratégico Maceió Cidade Inteligente</a></li>
-          <li><a href="https://drive.google.com/file/d/1kD6cS84ciufFOwb9_BN8oL6fY-Q5h6fI/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Boletim Econômico de Maceió</a></li>
-          <li><a href="https://drive.google.com/file/d/1cKCZHkHzffm82Tyln1YMaHtY6-BK1ICz/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Caderno Técnico Novo Centro</a></li>
-          <li><a href="https://drive.google.com/file/d/1IPh6lgZjDR2VT9HrKTKX6y_zKvxKwZPD/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Estratégia de Dados da Cidade de Maceió</a></li>
-          <li><a href="https://drive.google.com/file/d/1xGELz6C_Y3W41pEOqGhE8RFUFHnOG7jE/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Guia Setorial de Dados Iplan</a></li>
+    </div>
+  </nav>
+  <header>
+    <img src="../img/logo-planodiretor.svg" alt="logo plano diretor" />
+  </header>
+  <div class="content">
+    <!-- Produtos Revisão do Plano Diretor -->
+    <div class="campo">
+      <h2>Produtos Revisão do Plano Diretor</h2>
+      <div class="lista">
+        <ul>
+          <li>
+            <a href="https://drive.google.com/drive/folders/1ZwoTCbV8-ZLegNOHtREi579DDHd0wvO7?usp=drive_link"
+              target="_blank" rel="noopener noreferrer">Plano de Trabalho</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/drive/folders/1kBo6VXKFD7rg2ZAFyDanqwVmu1PkPMbl?usp=drive_link"
+              target="_blank" rel="noopener noreferrer">Caderno de Mapa de Apoio para as Oficinas
+            </a>
+          </li>
+          <li>
+            <a href="https://www.google.com/maps/d/u/1/viewer?mid=1bbXT5fPAlauaYBjmEZ6836C-9NfJG8Q&ll=-9.534885034971555%2C-35.68641899999999&z=10"
+              target="_blank" rel="noopener noreferrer">Maceió em Mapas
+            </a>
+
+            <h2 class="Etapa">Etapa 1. Estruturação</h2>
+
+          </li>
+          <li>
+            <a href="https://drive.google.com/drive/folders/14JYhuVfu-qooOTJ-FF7FkpZligVJd_W2?usp=drive_link"
+              target="_blank" rel="noopener noreferrer">Chamamento Público para composição do conselho
+            </a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/drive/folders/1aYxbvxVQ45SqMIUFgRZ2jKNbEEOJVHY-?usp=drive_link"
+              target="_blank" rel="noopener noreferrer">Portaria do Conselho pra Chamamento Público para Composição do
+              Conselho
+            </a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/drive/folders/1mLLjd6rMiPw0CrAK3BRFwl5QeGKdCI2c?usp=drive_link"
+              target="_blank" rel="noopener noreferrer">Regimento Interno
+            </a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/drive/folders/1k_f8wpsUjEiwExJtRJpNhIXQtAK_5dlL?usp=drive_link"
+              target="_blank" rel="noopener noreferrer">Portaria de Nomeação dos Componentes do Comitê Técnico do Plano
+              Diretor
+            </a>
+          </li>
+          <h2 class="Etapa">Etapa 2. Leitura</h2>
+          <li>
+            <a href="https://drive.google.com/drive/folders/1bjp6xJ_TYEDKbtvafeHnVFPrG_yDz5Fk?usp=sharing"
+              target="_blank" rel="noopener noreferrer">Caderno de Leitura Técnica</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/drive/folders/1Yi3UZzkYzr5MPzmGd43lNbDXLbU-ES0L?usp=sharing"
+              target="_blank" rel="noopener noreferrer">Caderno de Leitura Comunitária</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/drive/folders/1YMECtQ9zkjkMrxt01-EEX9-kQOqG00YL?usp=sharing"
+              target="_blank" rel="noopener noreferrer">Caderno de Proposições Comunitárias</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Dados e Informações Complementares -->
+    <div class="campo">
+      <h2>
+        Dados e Informações Complementares
+      </h2>
+      <div class="lista">
+        <ul>
+          <li><a href="https://drive.google.com/file/d/16Lerl-vioA6uu_10sVs0__1gohMOtUGT/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer">Maceió 4.0 | Plano Estratégico Maceió Cidade Inteligente</a>
+          </li>
+          <li><a href="https://drive.google.com/file/d/1kD6cS84ciufFOwb9_BN8oL6fY-Q5h6fI/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer">Boletim Econômico de Maceió</a></li>
+          <li><a href="https://drive.google.com/file/d/1cKCZHkHzffm82Tyln1YMaHtY6-BK1ICz/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer">Caderno Técnico Novo Centro</a></li>
+          <li><a href="https://drive.google.com/file/d/1IPh6lgZjDR2VT9HrKTKX6y_zKvxKwZPD/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer">Estratégia de Dados da Cidade de Maceió</a></li>
+          <li><a href="https://drive.google.com/file/d/1xGELz6C_Y3W41pEOqGhE8RFUFHnOG7jE/view?usp=drive_link"
+              target="_blank" rel="noopener noreferrer">Guia Setorial de Dados Iplan</a></li>
           <!-- <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li> -->
         </ul>
-        </div>
-       </div>
-      <!-- Documentos Úteis -->
-      <div class="campo">
-        <h2>Documentos Úteis</h2>
-        <div class="lista">
-          <ul>
-            <li>
-              <a
-                href="https://drive.google.com/drive/folders/1Nwkg6zgxrqRn5_geTTNWbCboyfOw3lTt?usp=drive_link"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Decretos de Alteração do Plano Diretor (2005-2024)</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://drive.google.com/drive/folders/1-E1tCvZfdibbrIaP6HmdGaJMl3uGBI9E?usp=drive_link"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Documentos do Processo de revisão até 2024</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.semurb.maceio.al.gov.br/servicos/plano_diretor"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Plano Diretor - 2005</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.semurb.maceio.al.gov.br/servicos/codigo_edificacoes"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Código de Edificações - 2007</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://programaorla.maceio.al.gov.br/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Site do Plano de Gestão Integrada da Orla de Maceió | PGI
-                Maceió</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.mpf.mp.br/grandes-casos/caso-pinheiro"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Grandes Casos - Pinheiro (MPF)</a
-              >
-            </li>
-          </ul>
-        </div>
       </div>
-
+    </div>
+    <!-- Documentos Úteis -->
+    <div class="campo">
+      <h2>Documentos Úteis</h2>
+      <div class="lista">
+        <ul>
+          <li>
+            <a href="https://drive.google.com/drive/folders/1Nwkg6zgxrqRn5_geTTNWbCboyfOw3lTt?usp=drive_link"
+              target="_blank" rel="noopener noreferrer">Decretos de Alteração do Plano Diretor (2005-2024)</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/drive/folders/1-E1tCvZfdibbrIaP6HmdGaJMl3uGBI9E?usp=drive_link"
+              target="_blank" rel="noopener noreferrer">Documentos do Processo de revisão até 2024</a>
+          </li>
+          <li>
+            <a href="https://www.semurb.maceio.al.gov.br/servicos/plano_diretor" target="_blank"
+              rel="noopener noreferrer">Plano Diretor - 2005</a>
+          </li>
+          <li>
+            <a href="https://www.semurb.maceio.al.gov.br/servicos/codigo_edificacoes" target="_blank"
+              rel="noopener noreferrer">Código de Edificações - 2007</a>
+          </li>
+          <li>
+            <a href="https://programaorla.maceio.al.gov.br/" target="_blank" rel="noopener noreferrer">Site do Plano de
+              Gestão Integrada da Orla de Maceió | PGI
+              Maceió</a>
+          </li>
+          <li>
+            <a href="https://www.mpf.mp.br/grandes-casos/caso-pinheiro" target="_blank"
+              rel="noopener noreferrer">Grandes Casos - Pinheiro (MPF)</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <footer>
-      <div class="logos">
-        <div class="logo-plano-footer">
-          <a href="http://planodiretor.maceio.al.gov.br">
-            <img
-              src="/img/logo-planodiretor-branco.svg"
-              alt="Logo do Plano de Maceió"
-            />
-          </a>
-        </div>
-        <div class="logo-pmm">
-          <a href="http://maceio.al.gov.br">
-            <img
-              src="/img/Brasão prefeitura (horizontal)_Branco.svg"
-              alt="Logo do Plano de Maceió"
-            />
-          </a>
-        </div>
-      </div>
-      <div class="navbar">
-        <a href="../index.html#sobre">Sobre</a>
-        <a href="./programacao.html">Programação</a>
+  </div>
 
-        <a href="../index.html#participacao-online">Participação Online</a>
-        <a href="./links.html">Documentos</a>
+  <footer>
+    <div class="logos">
+      <div class="logo-plano-footer">
+        <a href="http://planodiretor.maceio.al.gov.br">
+          <img src="/img/logo-planodiretor-branco.svg" alt="Logo do Plano de Maceió" />
+        </a>
       </div>
-    </footer>
-    <div class="copyright">
-      <p>
-        © 2024 -
-        <a href="https://maceio.al.gov.br/secretarias-e-orgaos/iplan">IPLAN</a>
-      </p>
+      <div class="logo-pmm">
+        <a href="http://maceio.al.gov.br">
+          <img src="/img/Brasão prefeitura (horizontal)_Branco.svg" alt="Logo do Plano de Maceió" />
+        </a>
+      </div>
     </div>
-  </body>
+    <div class="navbar">
+      <a href="../index.html#sobre">Sobre</a>
+      <a href="./programacao.html">Programação</a>
+
+      <a href="../index.html#participacao-online">Participação Online</a>
+      <a href="./links.html">Documentos</a>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>
+      © 2024 -
+      <a href="https://maceio.al.gov.br/secretarias-e-orgaos/iplan">IPLAN</a>
+    </p>
+  </div>
+</body>
+
 </html>
