@@ -96,7 +96,7 @@
   align-items: center;
   max-width: 1240px;
   padding: 40px 0;
-  gap: 40px;
+  gap: 60px;
 }
 
 .tematica-conteudo .imagem {
@@ -108,6 +108,23 @@
   align-items: flex-end;
   width: 90%;
 }
+
+.tematica-conteudo .video{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.tematica-conteudo .video video{
+  width: 100%;
+  height: 600px;
+}
+
+
 
 .tematica-conteudo .imagem p {
   font-family: "Bronkoh-ExtraLight";
@@ -124,8 +141,8 @@
   flex-wrap: nowrap;
   align-content: center;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
+  align-items: flex-start;
+    gap: 20px;
   width: 90%;
   padding-bottom: 40px;
 }
@@ -156,7 +173,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 5px
+  gap: 10px
 }
 
 .tematica-conteudo .texto .texto-title .parquedoamanha-styled h2:nth-child(2) {
@@ -164,8 +181,8 @@
 }
 .tematica-conteudo .texto p {
   margin: 0;
-  text-indent: 50px;
-  text-align: justify;
+  text-indent: 0;
+  text-align: left;
 }
 
 .tematica-conteudo .cronograma {
@@ -211,7 +228,7 @@
     background-color: #EFAA2E;
     color: #ffffff;
     font-size: 1.5em;
-    font-family: "Bronkoh-Bold";
+    font-family: "Bronkoh-Regular";
     height: 100px;
 }
 
@@ -226,6 +243,39 @@
 .tematica-conteudo  .consulta a:hover {
     background-color: #ffffff;
     color: #173F72;
+}
+
+.fichatecnica{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1240px;
+  gap: 10px;
+}
+
+.mais-sobre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1240px;
+  gap: 10px;
+}
+
+.mais-sobre a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2em;
+  background-color: #173F72;
+  font-family: "Bronkoh-Bold";
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.mais-sobre a:hover{
+  background-color: #ec7329;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
@@ -258,16 +308,37 @@
     align-items: center;
   }
 
+  .tematica-conteudo .video{
+    align-items: center;
+  }
+
+  .tematica-conteudo .video video{
+    height: 300px;
+  }
+
   .tematica-conteudo .texto p {
     text-indent: 0;
   }
   .tematica-conteudo .texto .texto-title .parquedoamanha-styled h2 {
-    font-size: 3em;
+    font-size: 2.3em;
   }
 
   .tematica-conteudo .consulta{
+
     height: 80px;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
+
+  .tematica-conteudo .consulta a {
+    padding: 10px 20px;
+    font-weight: 500;
+  }
+
+  .mais-sobre a{
+    font-size: 1.5em;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
   
 }

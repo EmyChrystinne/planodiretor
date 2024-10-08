@@ -28,38 +28,42 @@
     />
   </head>
   <body>
-    <nav>
-      <div class="logo-plano-nav">
-          <a href="http://planodiretor.maceio.al.gov.br">
-              <img src="../../img/logovertical-planodiretor.svg" alt="Logo do Plano de Maceió" />
-          </a>
-        </div>
-        <div class="menus">
-      <div class="menu-toggle" onclick="toggleMenu()">
-          <div></div>
-          <div></div>
-          <div></div>
+    <nav role="navigation">
+      <div class="logo">
+        <a href="../../index.html"><img src="../../img/logo-planodiretor.svg" alt="Logo"></a>
       </div>
-      <div class="navbar">
-          <a href="../../index.html#sobre">SOBRE</a>
-          <div class="temasemergentes" onclick="toggleDropdown('temas-emergentes-dropdown')">
-              <p aria-expanded="false">PROGRAMAÇÃO</p>
-              <div id="temas-emergentes-dropdown" class="dropdown">
-                  <a href="../programacao.html">PROGRAMAÇÃO DAS OFICINAS</a>
-                  <a href="../programacao-transporte.html">PROGRAMAÇÃO DOS TRANSPORTES</a>
-              </div>
-          </div>
-          <a href="../links.html">DOCUMENTOS</a>
-          <div class="temasemergentes" onclick="toggleDropdown('temas-emergentes-dropdown2')">
-              <p aria-expanded="false">TEMAS EMERGENTES</p>
-              <div id="temas-emergentes-dropdown2" class="dropdown">
-                  <a href="mudancasclimaticas.html">MUDANÇAS CLIMÁTICAS</a>
-                  <a href="direitoacidade.html">DIREITO À CIDADE</a>
-                  <a href="reestruturacaodapaisagemurbana.html">REESTRUTURAÇÃO DA PAISAGEM URBANA</a>
-              </div>
-          </div>
+      <div class="menu-toggle" id="mobile-menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    </div>
+      <div class="menu">
+        <ul>
+          <li><a href="../../index.html#sobre">SOBRE</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn" aria-expanded="false">PROGRAMAÇÃO</a>
+            <div class="dropdown-content">
+              <a href="../programacao.html">PROGRAMAÇÃO DAS OFICINAS</a>
+              <a href="../programacao-transporte.html">PROGRAMAÇÃO DOS TRANSPORTES</a>
+            </div>
+          </li>
+          <li><a href="../links.html">DOCUMENTOS</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn" aria-expanded="false">TEMAS EMERGENTES</a>
+            <div class="dropdown-content">
+              <a href="./mudancasclimaticas.html">MUDANÇAS CLIMÁTICAS</a>
+              <a href="./direitoacidade.html">DIREITO À CIDADE</a>
+              <a href="./reestruturacaodapaisagemurbana.html">REESTRUTURAÇÃO DA PAISAGEM URBANA</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn" aria-expanded="false">CONSULTAS</a>
+            <div class="dropdown-content">
+              <a href="../parquedoamanha.html">PARQUE DO AMANHÃ</a>
+            </div>
+          </li>
+        </ul>
+      </div>
   </nav>
     <div class="header" id="mudancas">
       <div class="content">

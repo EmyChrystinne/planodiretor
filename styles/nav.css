@@ -1,186 +1,144 @@
-/* Estilos básicos para o nav */
+/* Estilos gerais */
 nav {
-    display: flex;
-    align-items: center;
     background-color: #ffffff;
-    color: #173F73;
-    width: 100%;
+    color: #173f73;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
     height: 80px;
-    box-shadow: 0px 0px 5px 0px #c7c7c7;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    gap: 40px;
-    position: sticky;
-    top: 0;
+    box-sizing: border-box; /* Garantir que o padding não afete a largura do nav */
 }
 
-/* Logo */
-nav .logo-plano-nav {
+.logo img {
+    width: 150px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Estilos do menu */
+.menu ul {
     display: flex;
-    align-items: center;
-    width: 10%;
-    justify-content: center;
-}
-
-nav .logo-plano-nav a {
-    margin-left: 20px;
-    text-decoration: none;
-}
-
-.logo-plano-nav img {
-    width: auto;
-    height: 60px;
-    margin-right: 10px;
-}
-
-/* Menu de navegação */
-nav .navbar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 90%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    font-family: "Bronkoh";
+    list-style: none;
     gap: 20px;
 }
 
-/* Links do menu */
-nav .navbar a {
-    text-decoration: none;
-    color: #173F73;
-    font-size: 1.0em;
-}
-
-nav .navbar a:hover {
-    transition: 0.3s;
-    text-decoration: underline;
-    color: #F4BB49;
-}
-
-/* Dropdown */
-.temasemergentes {
+.menu ul li {
     position: relative;
-    display: inline-block;
 }
 
-.temasemergentes:hover .dropdown {
-    display: block; /* Exibe o dropdown quando o mouse está sobre o .temasemergentes */
+.menu ul li a {
+    color: #173f73;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
-.dropdown {
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos do dropdown */
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    min-width: 200px;
     z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown a {
-    color: black;
-    padding: 12px 16px;
+.dropdown-content a {
+    color: #173f73;
+    padding: 10px 20px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown a:hover {
-    background-color: #f1f1f1;
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
 }
 
-.temasemergentes p {
-    color: #173F73;
-    font-size: 1.0em;
-    font-family: "Bronkoh";
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+/* Exibir o dropdown ao clicar */
+.dropdown-content.show {
     display: block;
-    cursor: pointer;
-    text-align: center;
-
 }
 
-/* Menu Hamburguer */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    z-index: 10; /* Certifique-se de que o menu toggle esteja acima dos outros elementos */
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(16px);
 }
 
-.menu-toggle div {
-    width: 25px;
-    height: 3px;
-    background-color: #173F73;
-    margin: 3px 0;
-    transition: background-color 0.3s;
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
 }
 
-.menu-toggle:hover div {
-    background-color: #F4BB49;
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-16px);
 }
 
-/* Estilo para o menu no modo mobile */
-.menu-active .navbar {
-    display: flex;
-    flex-direction: column;
-}
-
-.menus{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-/* Estilo para o menu no modo mobile */
-@media screen and (max-width: 768px) {
+/* Estilos para telas menores */
+@media screen and (max-width: 1095px) {
     nav {
-        flex-direction: row;
-        height: auto;
-        gap: 10px;
-        padding: 10px 0;
-        justify-content: space-evenly;
-    }
-
-    nav .logo-plano-nav {
-        width: 20%;
-        justify-content: center;
-    }
-
-    nav .navbar {
+        flex-direction: row; /* Mantém a disposição horizontal no mobile */
+        justify-content: space-between; /* Mantém a logo e o menu toggle nas extremidades */
+        align-items: center;
         width: 100%;
-        flex-direction: column;
-        display: none; /* Oculta o menu de navegação */
-        background-color: #fff; /* Adiciona um fundo branco para o mobile */
-        position: absolute;
-        top: 80px; /* Ajuste conforme a altura da navbar */
-        left: 0;
-        z-index: 9;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     }
 
-    nav .navbar a {
-        padding: 10px;
-        text-align: center;
-    }
-
-    .dropdown {
-        position: static;
-        width: 100%; /* Garante que o dropdown preencha a largura */
+    .logo {
+        flex: 1; /* Mantém a logo em uma linha própria */
+        display: flex;
+        justify-content: flex-start;
     }
 
     .menu-toggle {
         display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin-right: 20px; /* Adiciona espaçamento para o menu toggle */
     }
 
-    .menus {
-        display: flex;
+    .menu-toggle span {
+        width: 30px;
+        height: 4px;
+        background-color: #173f73;
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+
+    .menu {
+        width: 100%;
+        position: absolute;
+        top: 80px; /* Ajustado para a altura do nav */
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu ul {
+        display: none;
         flex-direction: column;
-        width: 50%;
         align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul.active {
+        display: flex;
+    }
+
+    .menu ul li {
+        width: 90%;
+        text-align: left;
+    }
+
+    .menu ul li a {
+        padding: 15px 0;
+        width: 100%;
     }
 }
